@@ -1,0 +1,678 @@
+/* Reset */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/* Estilos para Instinto Café */
+
+/* Logo header y footer */
+.hf-logo {
+    height: 150px; 
+    width: auto;
+}
+/* Header */
+header{
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 30px;
+}
+/* Elementos del menú */
+.menu {
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+nav li {
+    margin: 0px 15px; 
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration:none ;
+    padding: 10px 20px;
+    display: block;
+}
+nav a:hover{
+    color: #ffb300;
+}
+
+.navbar-toggler{
+    border-color: #ffb300;
+    border-radius: 10px;
+    background-color: #3f220f;
+}
+.navbar-toggler-icon{
+    filter: invert(72%) sepia(74%) saturate(1454%) hue-rotate(359deg) brightness(101%) contrast(105%);
+}
+.navbar-nav .nav-link{
+    color: #ffffff;
+}
+.navbar-nav .nav-link:hover{
+    color: #ffb300
+}
+
+@media (max-width: 991.99px) {
+    .container{
+        padding: 0;
+    }
+    .container-fluid{
+        padding: 0px;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        background-color:#3f220f;
+        border-bottom: 2px solid #ffb300; 
+    }
+}
+/* Hero */
+.hero{
+    background-image: url(../media/fondo-hero.png);
+    background-size:cover;
+    background-position: top;
+    min-height: 100vh;
+    align-content: center;
+    margin-top: -220px;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+}
+.boton button {
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #ffb300;
+    border: 0px;
+}
+.hero h1{
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    text-shadow: 1px 1px 10px rgb(79, 69, 69) ;
+}
+
+
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #3f220f;
+}
+.columna{
+    grid-column: 2/2;
+    background-color:#ffb300;  
+    padding: 50px;
+    margin-top: -80px;
+    border-radius: 20px 0px 0px 20px;
+}
+.columna h2{
+    font-family: "rubik", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+.columna p{
+    color: #ffffff;
+}
+.columna .btn-primary{
+    background-color: #3f220f;
+    border: 0px;
+    border-radius: 0px;
+    font-family: "rubik";
+    font-weight: 600;
+}
+
+.columna .form-control{
+    border: 0px;
+    border-radius: 0px;
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3f220f;   
+}
+
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    color:white
+}
+
+
+/* Tipografía textos generales */
+p, li{
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3f220f;
+    font-size: 18px;
+}
+/* Tipografia texto del hero */
+.hero-text{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: 1px 1px 10px black;
+}
+
+
+/* Bloque uno */
+.bloque-uno{
+    display: flex;
+    padding: 80px 40px 20px;
+    background-color: #3f220f;
+    gap: 60px;
+    align-items: center;
+}
+.seccion-uno h2{
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color:#ffffff;
+}
+.seccion-uno p{
+    color: #ffffff;
+}
+.carousel-item {
+    height:450px;
+    width: 450px; 
+    object-fit:cover;
+}
+.carousel-inner, .carousel-item img{
+    border-radius: 20px;
+}
+.bloque-dos{
+    padding: 100px 150px;
+    background-color: #3f220f;
+    background-image: url(../media/granos-de-cafe.png);
+    background-size: cover;
+}
+.bloque-dos p{
+    text-align: center;
+    color: #ffffff;
+}
+.seccion-dos{
+    text-align: center;
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #ffffff;
+}
+.valores{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style: none;
+    gap: 30Px;
+    text-align: center;
+    padding: 20px;
+    
+}
+.valores li{
+    background-color: #ffffffc9;
+    padding: 30px;
+    border-radius: 20px;
+}
+.valores li:hover {
+  background-color: #ffffff;
+}
+
+.valores li img{
+    height: 60px;
+    margin-bottom: 20px;
+}
+.valores li p{
+    color: #3f220f;
+}
+.valores h3{
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #3f220f
+}
+
+.bloque-tres{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #3f220f;
+    padding-top: 180px;
+    padding-right: 50px;
+    padding-bottom: 180px;
+    column-gap: 50px;
+}
+
+.seccion-tres{
+    text-align: right;
+    padding: 50px;
+    margin: 40px 0px 40px;
+}
+.seccion-tres h2{
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #ffffff;
+}
+.seccion-tres p{
+    color: #ffffff;
+}
+
+.seccion-tres button{
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #ffb300;
+    border: 0px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.galeria img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.bloque-cuatro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 140px;
+    background-image: url(..//media/contadores-cafe.jpg);
+    background-size: cover;
+}
+.bloque-cuatro div{
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+.bloque-cuatro img{
+    width: 100px;
+    margin-bottom: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+}
+.bloque-cuatro h2{
+    font-family:"rubik", sans-serif;
+    font-weight:bold;
+    font-size: 50px;
+}
+
+.bloque-cuatro p{
+    color: #ffffff;
+}
+
+.bloque-cinco{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.bloque-cinco img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.bloque-seis{
+    background-color: #ffb300;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #3f220f;
+}
+
+.bloque-seis h2{
+   font-family:"rubik", sans-serif;
+    font-weight:bold;    
+}
+.bloque-seis h3{
+    font-family:"rubik", sans-serif;
+    margin-top: -10px; 
+}
+
+.bloque-seis p{
+    font-size: 48px;
+}
+
+
+/* Pagina de Producto */
+
+/* Hero Productos */
+.hero-productos{
+    background-image: url(../media/hero-producto-2s.png);
+    background-size:cover;
+    background-position: top;
+    min-height: 100vh;
+    align-content: center;
+    margin-top: -220px;
+}
+
+.hero-productos h1{
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    text-shadow: 1px 1px 10px rgb(79, 69, 69) ;
+}
+
+.bloque-productos{
+    display: flex;
+    align-items: stretch;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #3f220f;
+    
+}
+.bloque-productos img{
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    padding:50px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.978), rgba(255, 255, 255, 0.79)), url(../media/granos-de-cafe-tres.png);
+    background-size: contain;
+    align-items: flex-start;   
+}
+.descripcion h2{
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+}
+
+.descripcion li{
+    margin-bottom: 10px;
+}
+.banner-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    background-image: url(../media/contadores-cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-right: 30px;
+}
+
+.banner-cta h2{
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+   
+}
+
+/* Pagina de contacto */
+.hero-contacto{
+    background-image: linear-gradient( rgba(63, 34, 15, 0.5),
+        rgba(63, 34, 15, 0.5)), url(../media/hero-contacto.png);
+    background-size:cover;
+    background-position: top;
+    min-height: 100vh;
+    align-content: center;
+    margin-top: -220px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.hero-contacto h1{
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    text-shadow: 1px 1px 10px rgb(79, 69, 69) ;
+}
+
+.contacto{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../media/granos-de-cafe.png);
+    background-size: cover;
+    background-color: #3f220f;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  
+}
+.contacto h2{
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+.b1-contacto{
+    display: flex;
+    gap: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 80px;
+    padding-bottom: 150px;   
+}
+
+
+.b1-contacto ul{
+    flex: 0 1 40%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+}
+.b1-contacto ul h2{
+    color: #3f220f;
+    text-align: left;
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+}
+.b1-contacto li{
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+.b1-contacto img{
+    width: 7%;
+    margin-right: 3%;
+}
+
+.b1-contacto .formulario-contacto{
+    flex: 0 1 60%;
+}
+.b1-contacto .form-label{
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+.b1-contacto .form-control{
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3f220f;
+    font-size: 16px;
+}
+.b1-contacto .btn-primary{
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #ffb300;
+    border: 0px;
+}
+
+.ft{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.2fr 2fr;
+    padding: 60px 40px 60px 40px;
+    background-color: #3f220f;
+}
+.ft h2{
+    font-family:"rubik", sans-serif;
+    font-weight:bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.ft p{
+    color: #ffffff;
+}
+.ft ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+.ft a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.ft a:hover{
+    color: #ffb300;
+}
+.col-uno{
+    text-align: center;
+    padding-right: 80px;     
+}
+
+.col-uno img{
+    width: 150px;
+}
+.col-cuatro{
+    padding-right: 50px;
+}
+
+.col-cuatro .btn-primary{
+    background-color: #ffb300;
+    border: 0px;
+    border-radius: 0px;
+    font-family: "rubik";
+    font-weight: 600;
+}
+
+.col-cuatro .form-control{
+    border-width: 1px;
+    border-color: #3f220f;
+    border-radius: 10px;
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3f220f;
+    
+}
+.redes{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.redes img{
+    width: 40px;
+}
+
+.fin {
+    background-color: #5e3215;
+    color: #ffffff;
+    text-align: center;
+   
+}
+
+@media (max-width: 576px){
+    .hero-contacto{
+        min-height: 70vh;
+        margin-top: -220px;
+        padding-top: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+    .hero-contacto h1{
+        font-size: 48px;
+        }
+    .hero-contacto p{
+        font-size: 16px;
+    }
+    .contacto{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 150px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    }
+    .b1-contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 80px;   
+    }
+    .b1-contacto li{
+        list-style: none;
+        margin-bottom: 5%;
+        font-size: 16px;
+    }
+    .ft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+    .ft ul{
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+    }
+    .col-uno{
+        padding-right: 40px;     
+        padding-left: 40px;
+    }
+    
+    .col-cuatro{
+        text-align: center;
+        padding-right: 0px;
+        margin-top: 20px;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+    .fin {
+        font-size: 14px;
+        padding: 10px;
+    
+    }  
+}
+    
+
+
+
+
+
+
+
