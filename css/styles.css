@@ -596,7 +596,90 @@ p, li{
     text-align: center;
    
 }
+/* responsive tablet - Contacto */    
+@media (max-width: 991px) {
+    .hero-contacto{
+    min-height: 70vh;
+    margin-top: -220px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 150px;
+}
 
+.hero-contacto h1{
+    font-size: 48px;
+}
+
+.hero-contacto p{
+        font-size: 16px;
+    }
+
+.contacto{
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.b1-contacto{
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 100px;   
+}
+
+.b1-contacto li{
+    font-size: 16px;
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+.ft{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 60px;
+    row-gap: 35px;
+    background-color: #3f220f;
+    text-align: center;
+}
+.ft h2{
+    text-align: center;
+}
+
+.ft ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+.col-uno{
+    padding-right: 0px;     
+}
+
+.col-uno img{
+    width: 120px;
+}
+.col-cuatro{
+    padding-right: 0px;
+}
+.redes{
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+.redes img{
+    width: 30px;
+}
+
+.fin {
+    background-color: #5e3215;
+    color: #ffffff;
+    text-align: center;
+   
+}
+}
+/* responsive mobile - Contacto */
 @media (max-width: 576px){
     .hero-contacto{
         min-height: 70vh;
@@ -668,7 +751,7 @@ p, li{
     
     }  
 }
-    
+
 
 
 
