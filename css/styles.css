@@ -455,7 +455,7 @@ p, li{
     font-size: 38px;
 }
 .formulario{
-    padding: 10px;
+    padding: 20px;
 }  
 
 .bloque-uno{
@@ -597,6 +597,75 @@ p, li{
     color: #ffffff;
    
 }
+
+
+/* Productos - Mq - Tablet */
+@media (max-width: 991px) {
+.hero-productos{
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.hero-productos h1{
+    font-size: 48px;
+}
+
+.bloque-productos{
+    display: flex;
+    align-items: stretch;
+    padding-left: 30px;
+    padding-right: 30px;    
+}
+
+.descripcion{
+    padding:35px;
+}
+
+.banner-cta{
+    padding-right: 60px;
+    padding-left: 60px;
+}
+}
+
+/* Productos - Mq - Mobile */
+@media (max-width: 576px) {
+.hero-productos{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hero-productos h1{
+    font-size: 38px;
+}
+.hero-productos p{
+    font-size: 18px;
+}
+.bloque-productos{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    padding-left: 0px;
+    padding-right: 0px; 
+    width: 100%;   
+}
+
+.coffe-description{
+    width: 100% !important;       
+    height: 280px;      
+}
+.descripcion{
+    padding:35px;
+}
+.bloque-productos:nth-of-type(even) {
+    flex-direction: column-reverse;
+    }
+.banner-cta{
+    padding-right: 60px;
+    padding-left: 60px;
+}
+}
+
+
 
 /* Pagina de contacto */
 .hero-contacto{
