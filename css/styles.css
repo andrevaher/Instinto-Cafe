@@ -359,6 +359,7 @@ p, li{
 .hero{
     min-height: 80vh;
     padding-top: 180px;
+    padding-bottom: 20px;
 }
 .hero h1{
     font-size: 48px;
@@ -368,7 +369,7 @@ p, li{
     padding: 40px;
 }  
 .columna{
-    margin-top: -60px;
+    margin-top: 0px;
     border-radius: 20px;
 }
 /* Tipografía textos generales tablet*/
