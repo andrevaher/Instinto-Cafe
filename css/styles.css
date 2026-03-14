@@ -80,7 +80,7 @@ nav a:hover{
 }
 /* Hero */
 .hero{
-    background-image: url(../media/fondo-hero.png);
+    background-image: url(../media/fondo-hero.jpg);
     background-size:cover;
     background-position: top;
     min-height: 100vh;
@@ -354,12 +354,102 @@ p, li{
     font-size: 48px;
 }
 
+/* Home - Mq - Tablet */
+@media (max-width: 991px) {
+.hero{
+    min-height: 80vh;
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+.hero h1{
+    font-size: 48px;
+}
+.formulario{
+    display: block;
+    padding: 40px;
+}  
+.columna{
+    margin-top: 0px;
+    border-radius: 20px;
+}
+/* Tipografía textos generales tablet*/
+p, li{
+    font-size: 16px;
+}
+.bloque-uno{
+    padding: 30px 40px 20px;
+    gap: 30px;
+}
+.seccion-uno h2{
+    font-size: 28px;
+}
+.carousel-item {
+    height:300px;
+    width: 300px;
+}
+.bloque-dos{
+    padding: 40px 40px;
+}
+.seccion-dos{
+    font-size: 28px;
+}
+.valores{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20Px;
+    padding: 10px;  
+}
+.bloque-tres{
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 80px;
+    column-gap: 10px;
+}
+.seccion-tres{
+    text-align: right;
+    padding: 20px;
+}
+.seccion-tres h2{
+    font-size: 28px; 
+}
+.seccion-tres button{
+    padding: 15px 15px 15px 15px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    height: 310px;
+    gap: 10px;
+}
+.galeria img{
+    width: 150px;
+    height: 150px;
+}
+.bloque-cuatro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 40px;
+}
+
+.bloque-cuatro h2{
+    font-size:36px;
+}
+.bloque-cinco img{
+    width: 100%;
+    height: 100px;
+}
+}
+
 
 /* Pagina de Producto */
 
 /* Hero Productos */
 .hero-productos{
-    background-image: url(../media/hero-producto-2s.png);
+    background-image: url(../media/hero-producto-2s.jpg);
     background-size:cover;
     background-position: top;
     min-height: 100vh;
@@ -429,7 +519,7 @@ p, li{
 /* Pagina de contacto */
 .hero-contacto{
     background-image: linear-gradient( rgba(63, 34, 15, 0.5),
-        rgba(63, 34, 15, 0.5)), url(../media/hero-contacto.png);
+        rgba(63, 34, 15, 0.5)), url(../media/hero-contacto.jpg);
     background-size:cover;
     background-position: top;
     min-height: 100vh;
@@ -437,6 +527,7 @@ p, li{
     margin-top: -220px;
     padding-left: 200px;
     padding-right: 200px;
+    padding-top: 150px;
 }
 
 .hero-contacto h1{
@@ -596,14 +687,14 @@ p, li{
     text-align: center;
    
 }
-/* responsive tablet - Contacto */    
+/* Contacto mq tablet */    
 @media (max-width: 991px) {
     .hero-contacto{
-    min-height: 70vh;
+    min-height: 80vh;
     margin-top: -220px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 .hero-contacto h1{
@@ -679,17 +770,17 @@ p, li{
    
 }
 }
-/* responsive mobile - Contacto */
+/* COntacto - mq mobile */
 @media (max-width: 576px){
     .hero-contacto{
         min-height: 70vh;
         margin-top: -220px;
-        padding-top: 150px;
+        padding-top: 200px;
         padding-left: 20px;
         padding-right: 20px;
         }
     .hero-contacto h1{
-        font-size: 48px;
+        font-size: 36px;
         }
     .hero-contacto p{
         font-size: 16px;
