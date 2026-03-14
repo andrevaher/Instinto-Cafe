@@ -450,6 +450,9 @@ p, li{
 .hero{
     padding-top: 230px;
     padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 70vh;
 }
 .hero h1{
     font-size: 38px;
@@ -483,6 +486,7 @@ p, li{
 }
 .galeria{
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, fr);
     grid-template-rows: repeat(2, auto);
     height: 260px;
@@ -537,6 +541,8 @@ p, li{
     min-height: 100vh;
     align-content: center;
     margin-top: -220px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .hero-productos h1{
@@ -631,8 +637,9 @@ p, li{
 /* Productos - Mq - Mobile */
 @media (max-width: 576px) {
 .hero-productos{
-    padding-left: 20px;
-    padding-right: 20px;
+    min-height: 70vh;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .hero-productos h1{
     font-size: 38px;
