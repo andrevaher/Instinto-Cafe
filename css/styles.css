@@ -1238,6 +1238,7 @@ footer .fin {
     font-style: normal;
     font-size: 18px;
     color: #ffffff;
+    text-shadow: 1px 1px 10px rgb(41, 35, 35);
   }
   .contacto {
     display: flex;

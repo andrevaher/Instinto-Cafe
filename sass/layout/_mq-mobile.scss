@@ -116,6 +116,7 @@
         }
         p{
             @include textos (18px, $color-terciario);
+            text-shadow: 1px 1px 10px rgb(41, 35, 35);
         }
     }
     .contacto{
