@@ -5,7 +5,7 @@
 /*home - mobile*/
 @media (max-width: 576px){
     .hero{
-        @include hero(100vh, 230px,40px,30px, 30px,url("../media/fondo-hero.jpg"));
+        @include hero(80vh, 150px,40px,30px, 30px,url("../media/fondo-hero.jpg"));
 
         h1{
             @include titulos(38px,$color-terciario);
@@ -83,7 +83,7 @@
 @media (max-width: 576px){
 
     .hero-productos{
-        @include hero(90vh, 150px, 0px, 30px, 30px, url("../media/hero-producto-2s.jpg"));
+        @include hero(80vh, 150px, 0px, 30px, 30px, url("../media/hero-producto-2s.jpg"));
         
         h1{
             @include h1-hero(38px);
@@ -110,7 +110,7 @@
 @media (max-width: 576px){
 
     .hero-contacto{
-        @include hero(90vh, 200px, 0px, 20px, 20px, url("../media/hero-contacto.jpg"));
+        @include hero(80vh, 150px, 0px, 20px, 20px, url("../media/hero-contacto.jpg"));
         h1{
             @include h1-hero(36px);
         }

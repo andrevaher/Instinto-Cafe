@@ -24,7 +24,7 @@
 
 @media (max-width: 991px){
     .hero{
-        @include hero(80vh, 180px,20px,10px, 10px,url("../media/fondo-hero.jpg"));
+        @include hero(90vh, 180px,20px,10px, 10px,url("../media/fondo-hero.jpg"));
 
         .boton{
         display: flex;
@@ -124,7 +124,7 @@
 @media (max-width: 991px){
 
     .hero-productos{
-        @include hero(80vh, 150px, 0px, 50px, 50px, url("../media/hero-producto-2s.jpg"));
+        @include hero(90vh, 150px, 0px, 50px, 50px, url("../media/hero-producto-2s.jpg"));
         h1{
             @include h1-hero(48px);
         }
