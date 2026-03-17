@@ -1044,6 +1044,7 @@ footer .fin {
     align-items: center;
     padding: 30px;
     gap: 5px;
+    flex-direction: column;
   }
   .bloque-dos {
     padding: 20px;
@@ -1078,7 +1079,7 @@ footer .fin {
     grid-template-rows: repeat(2, auto);
     gap: 10px;
     height: 260px;
-    width: 260px;
+    width: 200px;
   }
   .bloque-cuatro {
     display: grid;
@@ -1095,6 +1096,13 @@ footer .fin {
     width: 100%;
     height: 100px;
     object-fit: cover;
+  }
+  .bloque-seis {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bloque-seis p {
+    font-size: 20px;
   }
 }
 /*Productos - Mobile*/
@@ -1189,7 +1197,7 @@ footer .fin {
   footer .ft {
     display: grid;
     grid-template-columns: 1 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 4 1fr;
     padding: 60px 40px 0px 40px;
     background-color: #3f220f;
     text-align: center;

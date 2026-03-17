@@ -16,6 +16,7 @@
     }
     .bloque-uno{
         @include bloque-uno (30px,5px,);
+        flex-direction: column;
     }
     .bloque-dos{
         @include bloque-dos (20px);
@@ -31,7 +32,8 @@
         }
        .galeria{
             @include galeria (repeat(2, fr), repeat(2, auto), 10px, 260px);
-            width: 260px;
+            width: 200px;
+    
         }
     }
     .bloque-cuatro{
@@ -43,6 +45,13 @@
     .bloque-cinco{
         img{
             @include imagen-bloque (100px);
+        }
+    }
+    .bloque-seis{
+        padding-left: 20px;
+        padding-right: 20px;
+        p{
+            font-size: 20px;
         }
     }
 
@@ -94,7 +103,7 @@
 @media (max-width: 576px){
     footer{
         .ft{
-            @include footer(1 1fr, 1fr 1fr, 60px 40px 0px 40px);
+            @include footer(1 1fr, 4 1fr, 60px 40px 0px 40px);
             text-align: center;
             row-gap: 40px;
 
