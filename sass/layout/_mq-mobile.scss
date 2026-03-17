@@ -5,10 +5,13 @@
 /*home - mobile*/
 @media (max-width: 576px){
     .hero{
-        @include hero(70vh, 230px,40px,30px, 30px,url("../media/fondo-hero.jpg"));
+        @include hero(100vh, 230px,40px,30px, 30px,url("../media/fondo-hero.jpg"));
 
         h1{
             @include titulos(38px,$color-terciario);
+        }
+        p{
+            @include textos(18px, $color-terciario);
         }
     }
     .formulario {
@@ -43,7 +46,8 @@
         }
        .galeria{
             @include galeria (repeat(2, 1fr), repeat(2, 1fr), 15px, 450px);
-            width: 90%;
+            width: 100%;
+            padding: 20px;
 
             img{
                 @include imagen-galeria (100%, 100%, 20px);
@@ -79,15 +83,22 @@
 @media (max-width: 576px){
 
     .hero-productos{
-        @include hero(70vh, 150px, 0px, 30px, 30px, url("../media/hero-producto-2s.jpg"));
+        @include hero(90vh, 150px, 0px, 30px, 30px, url("../media/hero-producto-2s.jpg"));
+        
         h1{
             @include h1-hero(38px);
+        }
+        p{
+            @include textos(18px,$color-terciario);
         }
     }
     .bloque-productos{
         @include bloque-productos(0px, 0px, 0px);
         flex-direction: column;
         width: 100%;
+        img{
+            width: 100%;
+        }
 
         &:nth-of-type(even) {
             flex-direction: column-reverse;
@@ -99,19 +110,20 @@
 @media (max-width: 576px){
 
     .hero-contacto{
-        @include hero(70vh, 200px, 0px, 20px, 20px, url("../media/hero-contacto.jpg"));
+        @include hero(90vh, 200px, 0px, 20px, 20px, url("../media/hero-contacto.jpg"));
         h1{
             @include h1-hero(36px);
         }
         p{
-            @include textos (16px, $color-terciario);
+            @include textos (18px, $color-terciario);
         }
     }
     .contacto{
-        @include seccion-contacto(150px, 10px, 10px, center);
+        @include seccion-contacto(150px, 20px, 20px, center);
 
         .b1-contacto{
             @include bloque-uno-contacto(10px, 10px, 20px, 80px, 10px);
+            flex-direction: column;
         }
     }
 }
@@ -124,7 +136,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            row-gap: 20px;
+            row-gap: 40px;
 
             .col-uno{
                 @include columna-uno(40px);
@@ -141,33 +153,12 @@
                 }
             } 
             .col-cuatro{
-                @include columna-cuatro(50px);
+                @include columna-cuatro(0px);
+                padding-bottom: 20px;
 
-                .btn-primary{
-                background-color: $color-secundario;
-                border: 0px;
-                border-radius: 0px;
-                font-family: $fuente-titulos;
-                font-weight: 600;
-                }
-                .form-control{
-                border-width: 1px;
-                border-color: $color-principal;
-                border-radius: 10px;
-                font-family: $fuentes-textos;
-                font-weight: 400;
-                font-style: normal;
-                color: $color-principal;
-                }
-                .redes{
-                @include redes (repeat(3, 1fr));
-
-                    img{
-                    width: 30px;
-                    }
-                }
             }
         }
     }
 }
+
 

@@ -856,6 +856,13 @@ footer .fin {
     height: 100%;
     object-fit: cover;
   }
+  .bloque-seis p {
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #ffffff;
+  }
 }
 /*Productos - Tablet*/
 @media (max-width: 991px) {
@@ -909,6 +916,13 @@ footer .fin {
     background-position: center;
     padding-right: 60px;
     padding-left: 60px;
+  }
+  .bloque-seis p {
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 148px;
+    color: #ffffff;
   }
 }
 /*Contacto - Tablet*/
@@ -984,6 +998,14 @@ footer .fin {
   }
   footer .ft .col-uno img {
     width: 120px;
+    margin-top: -10px;
+  }
+  footer .ft .col-uno p {
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #ffffff;
   }
   footer .ft .col-dos h2 {
     font-family: "rubik", sans-serif;
@@ -1001,13 +1023,21 @@ footer .fin {
   footer .ft .col-cuatro {
     padding-right: 0px;
   }
+  footer .ft .col-cuatro h2 {
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+  }
   footer .ft .col-cuatro .redes {
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
+    display: flex;
+    justify-content: center;
   }
   footer .ft .col-cuatro .redes img {
-    width: 5px;
+    width: 25px;
   }
 }
 /*Mq- Mobile*/
@@ -1017,7 +1047,7 @@ footer .fin {
     background-image: url("../media/fondo-hero.jpg");
     background-size: cover;
     background-position: top;
-    height: 70vh;
+    height: 100vh;
     align-content: center;
     padding-top: 230px;
     padding-bottom: 40px;
@@ -1030,6 +1060,13 @@ footer .fin {
     font-family: "rubik", sans-serif;
     font-weight: 600;
     font-size: 38px;
+    color: #ffffff;
+  }
+  .hero p {
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
     color: #ffffff;
   }
   .formulario {
@@ -1087,7 +1124,8 @@ footer .fin {
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     height: 450px;
-    width: 90%;
+    width: 100%;
+    padding: 20px;
   }
   .bloque-tres .galeria img {
     width: 100%;
@@ -1131,7 +1169,7 @@ footer .fin {
     background-image: url("../media/hero-producto-2s.jpg");
     background-size: cover;
     background-position: top;
-    height: 70vh;
+    height: 90vh;
     align-content: center;
     padding-top: 150px;
     padding-bottom: 0px;
@@ -1147,6 +1185,13 @@ footer .fin {
     color: #ffffff;
     text-shadow: 1px 1px 10px rgb(79, 69, 69);
   }
+  .hero-productos p {
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+  }
   .bloque-productos {
     display: flex;
     align-items: stretch;
@@ -1156,6 +1201,9 @@ footer .fin {
     padding-bottom: 40px;
     background-color: #3f220f;
     flex-direction: column;
+    width: 100%;
+  }
+  .bloque-productos img {
     width: 100%;
   }
   .bloque-productos:nth-of-type(even) {
@@ -1168,7 +1216,7 @@ footer .fin {
     background-image: url("../media/hero-contacto.jpg");
     background-size: cover;
     background-position: top;
-    height: 70vh;
+    height: 90vh;
     align-content: center;
     padding-top: 200px;
     padding-bottom: 0px;
@@ -1188,7 +1236,7 @@ footer .fin {
     font-family: "nitti-typewriter-normal", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
   }
   .contacto {
@@ -1200,8 +1248,8 @@ footer .fin {
     background-size: cover;
     background-color: #3f220f;
     padding-bottom: 150px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .contacto .b1-contacto {
     display: flex;
@@ -1210,6 +1258,7 @@ footer .fin {
     padding-right: 10px;
     padding-top: 20px;
     padding-bottom: 80px;
+    flex-direction: column;
   }
 }
 /*Footer mobile*/
@@ -1218,7 +1267,7 @@ footer .fin {
     display: flex;
     flex-direction: column;
     text-align: center;
-    row-gap: 20px;
+    row-gap: 40px;
   }
   footer .ft .col-uno {
     text-align: center;
@@ -1236,31 +1285,8 @@ footer .fin {
     text-align: center;
   }
   footer .ft .col-cuatro {
-    padding-right: 50px;
-  }
-  footer .ft .col-cuatro .btn-primary {
-    background-color: #ffb300;
-    border: 0px;
-    border-radius: 0px;
-    font-family: "rubik", sans-serif;
-    font-weight: 600;
-  }
-  footer .ft .col-cuatro .form-control {
-    border-width: 1px;
-    border-color: #3f220f;
-    border-radius: 10px;
-    font-family: "nitti-typewriter-normal", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #3f220f;
-  }
-  footer .ft .col-cuatro .redes {
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-  }
-  footer .ft .col-cuatro .redes img {
-    width: 30px;
+    padding-right: 0px;
+    padding-bottom: 20px;
   }
 }
 
