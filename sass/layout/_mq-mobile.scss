@@ -28,7 +28,7 @@
             @include valores(repeat(1,1fr), 20px, 10px);
             li{
                 img {
-                    height: 30px;
+                    height: 50px;
                     margin-bottom: 20px;
                 }
             }
@@ -42,9 +42,14 @@
             text-align: center;
         }
        .galeria{
-            @include galeria (repeat(2, 1fr), repeat(2, auto), 10px, 400px);
+            @include galeria (repeat(2, 1fr), repeat(2, 1fr), 15px, 450px);
             width: 100%;
-    
+
+            img{
+                @include imagen-galeria (100%, 100%, 20px);
+                display: block;
+
+            }
         }
     }
     .bloque-cuatro{
@@ -119,7 +124,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            row-gap: 10px;
+            row-gap: 20px;
 
             .col-uno{
                 @include columna-uno(40px);
@@ -137,12 +142,15 @@
             } 
             .col-cuatro{
                 @include columna-cuatro(0px);
+                display: flex;
                 text-align: center;
+                justify-content: center;
                 .redes{
                     @include redes (repeat(3, 1fr));
 
                     img{
-                        width: 10px;
+                        width: 30px;
+                        
                     }
                 }
             }
