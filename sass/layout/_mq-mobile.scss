@@ -48,6 +48,12 @@
         }
     }
     .bloque-cinco{
+       @include bloque-cinco (repeat(3,1fr));
+
+        img{
+        @include imagen-bloque (150px);
+        }
+    }
         img{
             @include imagen-bloque (100px);
         }
@@ -60,7 +66,6 @@
         }
     }
 
-}
 
 /*Productos - Mobile*/
 @media (max-width: 576px){
@@ -108,7 +113,7 @@
 @media (max-width: 576px){
     footer{
         .ft{
-            @include footer(1 1fr, 4 1fr, 60px 40px 0px 40px);
+            @include footer(1 1fr, auto, 60px 40px 0px 40px);
             text-align: center;
             row-gap: 40px;
 
