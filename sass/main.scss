@@ -1,0 +1,24 @@
+/*reset*/
+@use "base/reset";
+
+/*header*/
+@use "layout/header";
+
+/*home*/
+@use "pages/home";
+
+/*productos*/
+@use "pages/productos";
+
+/*contacto*/
+@use "pages/contacto";
+
+/*footer*/
+@use "layout/footer";
+
+/*Mq- Tablet*/
+@use "layout/mq-tablet";
+
+/*Mq- Mobile*/
+@use "layout/mq-mobile";
+

@@ -1,0 +1,235 @@
+@use "variables" as*;
+
+//logo//
+@mixin logo {
+    height: 150px; 
+    width: auto;    
+}
+
+//Textos//
+@mixin titulos ($font-size, $color){
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: $font-size;
+    color: $color;
+}
+@mixin textos ($font-size, $color){
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $font-size;
+    color: $color;
+}
+
+//Hero//
+@mixin hero ($height, $padding-top,$padding-bottom,$padding-left, $padding-right, $background){
+    background-image: $background;
+    background-size:cover;
+    background-position: top;
+    height: $height;
+    align-content: center;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    margin-top: -220px;
+    text-align: center;
+}
+
+@mixin boton ($padding) {
+    padding: $padding;
+    border-radius: 10px;
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+    color: $color-terciario;
+    background-color:$color-secundario;
+    border: 0px;
+}
+@mixin h1-hero ($font-size){
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+    font-size: $font-size;
+    color: $color-terciario;
+    text-shadow: 1px 1px 10px rgb(79, 69, 69) ;
+}
+
+//formulario//
+@mixin seccion-formulario ($columnas, $padding){
+    display: grid;
+    background-color:$color-principal;
+    grid-template-columns: $columnas;
+    padding: $padding;
+}
+@mixin formulario ($grid-column, $margin-top, $border-radius) {
+    grid-column: $grid-column;
+    background-color:$color-secundario; 
+    padding: 50px; 
+    margin-top: $margin-top;
+    border-radius:$border-radius
+}
+//Bloque uno //
+@mixin bloque-uno ($padding, $gap){
+     display: flex;
+     background-color: $color-principal;
+     align-items: center;
+     padding: $padding;
+     gap: $gap;
+}
+@mixin carrusel($height, $width){
+    height:$height;
+    width: $width; 
+    object-fit:cover;
+}
+@mixin bloque-dos ($padding){
+    padding: $padding;
+    background-color: $color-principal;
+    background-image: url(../media/granos-de-cafe.png);
+    background-size: cover;
+    text-align: center;
+}
+@mixin valores($columns, $gap, $padding){
+    display: grid;
+    grid-template-columns: $columns;
+    list-style: none;
+    gap: $gap;
+    text-align: center;
+    padding: $padding;  
+}
+@mixin bloque-tres ($padding-top, $padding-right, $padding-bottom, $gap, $column){
+    display: grid;
+    grid-template-columns: $column;
+    background-color: $color-principal;
+    padding-top: $padding-top;
+    padding-right: $padding-right;
+    padding-bottom: $padding-bottom;
+    column-gap: $gap;
+}
+@mixin galeria ($colum, $row, $gap, $height){
+    display: grid;
+    grid-template-columns: $colum;
+    grid-template-rows: $row;
+    gap: $gap;
+    height: $height;
+}
+@mixin imagen-galeria ($width, $height, $radius){
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    border-radius:$radius ;
+}
+@mixin bloque-cuatro ($colum, $gap, $padding){
+    display: grid;
+    grid-template-columns: $colum;
+    gap: $gap;
+    padding: $padding;
+    background-image: url(..//media/contadores-cafe.jpg);
+    background-size: cover;
+}
+@mixin bloque-cinco ($colum){
+    display: grid;
+    grid-template-columns: $colum;
+}
+@mixin imagen-bloque ($height){
+    width: 100%;
+    height: $height;
+    object-fit: cover;
+}
+//Pagina de Producto //
+
+@mixin bloque-productos($padding-right,$padding-left,$padding-top){
+    display: flex;
+    align-items: stretch;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    padding-top: $padding-top;
+    padding-bottom: 40px;
+    background-color:$color-principal;
+}
+@mixin productos-img($width){
+    width: $width;
+    object-fit: cover;
+    object-position: center;
+}
+@mixin descripcion-productos($padding){
+    display: flex;
+    flex-direction: column;
+    padding:$padding;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.978), rgba(255, 255, 255, 0.79)), url(../media/granos-de-cafe-tres.png);
+    background-size: contain;
+    align-items: flex-start; 
+    font-family: $fuentes-textos; 
+
+}
+@mixin banner-cta($padding-left, $padding-right){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    background-image: url(../media/contadores-cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-right: $padding-right;
+    padding-left: $padding-left;
+}
+
+//Pagina de contacto //
+@mixin seccion-contacto($padding-bottom, $padding-left, $padding-right, $justify-content){
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: $justify-content;
+    background-image: url(../media/granos-de-cafe.png);
+    background-size: cover;
+    background-color: $color-principal;
+    padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+@mixin bloque-uno-contacto($pading-left, $padding-right, $padding-top, $padding-bottom, $gap){
+    display: flex;
+    gap: $gap;
+    padding-left: $pading-left;
+    padding-right: $padding-right;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom; 
+}
+@mixin lista-contacto($font-size){
+    list-style: none;
+    margin-bottom: 5%;
+    font-size: $font-size;
+    font-family: $fuentes-textos;
+}
+
+//Footer//
+@mixin footer($colums, $rows, $padding){
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    padding: $padding;
+    background-color: $color-principal;
+}
+@mixin columna-uno($padding-right){
+    text-align: center;
+    padding-right: $padding-right;
+}
+@mixin imagen-columna($width){
+    width:$width
+}
+@mixin columna-cuatro($padding-right){
+    padding-right:$padding-right;
+}
+@mixin redes ($columns){
+    display: flex;
+    grid-template-columns: $columns;
+    gap: 5px;  
+}
+@mixin datos-desarrollo($font-size){
+    background-color:$color-principal;
+    color: $color-terciario;
+    text-align: center;
+    font-size: $font-size;
+    padding: 10px;
+    font-family: $fuentes-textos;
+}

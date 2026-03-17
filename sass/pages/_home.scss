@@ -1,0 +1,194 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as *;
+
+//Hero//
+.hero{
+    @include hero(100vh, 0px, 0px, 0px,0px, url("../media/fondo-hero.jpg"));
+    .boton{
+        display: flex;
+        justify-content: center;
+        button {
+            @include boton(15px 40px 15px 40px);
+        }
+    }
+    h1{
+        @include h1-hero (64px);
+    }
+    p{
+        @include textos (24px,  $color-terciario);
+    }
+}
+
+//Seccion formulario//
+.formulario {
+    @include seccion-formulario (repeat(2, 1fr), auto);
+    .columna{
+        @include formulario ( 2, -80px, 20px 0px 0px 20px);
+
+        h2{
+            @include titulos (48px, $color-terciario);
+            }
+        p{
+            @include textos (18px, $color-terciario);
+        }
+        .btn-primary{
+            background-color: $color-principal;
+            border: 0px;
+            border-radius: 0px;
+            font-family: $fuente-titulos;
+            font-weight: 600;
+        } 
+        .form-control{
+            border: 0px;
+            border-radius: 0px;
+            font-family: $fuentes-textos;
+            font-weight: 400;
+            color: $color-principal;  
+        }  
+    }
+}
+
+//bloque uno//
+.bloque-uno{
+    @include bloque-uno (80px 40px 20px, 60px);
+    .carousel-inner{
+        .carousel-item{
+            @include carrusel(450px, 450px);
+
+            img{
+                border-radius: 20px;
+                }
+            }
+    }   
+    .seccion-uno{
+        h2{
+            @include titulos (36px, $color-terciario);
+            }
+        p{
+            @include textos (18px, $color-terciario)
+        }
+    }
+}
+
+//bloque dos//
+.bloque-dos{
+    @include bloque-dos (100px 150px);
+    .seccion-dos{
+        @include titulos (36px, $color-terciario);
+    }
+    p{
+        @include textos (18px, $color-terciario);
+        text-align: center;
+    }
+    .valores{
+        @include valores(repeat(4,1fr), 30px, 20px);
+        li{
+            background-color: #ffffffc9;
+            padding: 30px;
+            border-radius: 20px;
+
+            
+
+            img {
+                height: 60px;
+                margin-bottom: 20px;
+            }
+            h3{
+                @include titulos (24px, $color-principal);
+            }
+            p{
+                @include textos (18px, $color-principal)
+            }
+
+        }
+        :hover{
+            background-color: $color-terciario;
+        }
+    }
+}
+
+//bloque tres//
+.bloque-tres{
+    @include bloque-tres (180px, 50px, 180px, 50px, repeat(2,1fr));
+    
+    .seccion-tres {
+        text-align: right;
+        padding: 50px;
+        margin: 40px 0px 40px;
+
+        h2{
+            @include titulos (36px, $color-terciario)
+        }
+        p{
+            @include textos (18px, $color-terciario)
+        }
+        button{
+            @include boton (15px 40px 15px 40px);
+        }
+    }
+    .galeria{
+        @include galeria (repeat(2, 1fr), repeat(2, 1fr), 10px, auto);
+
+        img{
+            @include imagen-galeria (100%, 200px, 20px);
+        }
+    }
+}
+
+//bloque cuatro//
+.bloque-cuatro{
+    @include bloque-cuatro (repeat(3, 1fr), 40px, 140px);
+    div{
+        text-align: center;
+        padding: 20px;
+        color: #ffffff;
+
+        img{
+            width: 100px;
+            margin-bottom: 40px;
+            border: 2px solid $color-terciario;
+            border-radius: 20px;
+            padding: 25px;
+        }
+        h2{
+            @include titulos (50px, $color-terciario)
+        }
+        p{
+            @include textos(18px, $color-terciario);
+        }
+
+    }
+}
+
+
+//bloque cinco//
+.bloque-cinco{
+   @include bloque-cinco (repeat(6,1fr));
+
+   img{
+    @include imagen-bloque (150px);
+   }
+}
+
+//bloque seis//
+.bloque-seis{
+    background-color: $color-secundario;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: $color-principal;
+
+    h2{
+        @include titulos (28px, $color-terciario)
+    }
+
+    h3{
+        font-family: $fuente-titulos;
+        margin-top: -10px;
+    }
+    p{
+        @include textos (48px, $color-terciario);
+    }
+
+}
+

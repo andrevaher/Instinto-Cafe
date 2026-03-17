@@ -1,0 +1,57 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as *;
+
+//Header//
+.hf-logo {
+    @include logo;
+}
+
+header{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 30px;
+    nav{
+        ul{
+         @include textos (18px, $color-terciario);
+         display: flex;
+         list-style: none;
+         padding: 0px;
+         margin: 0px;
+
+         li{
+            margin: 0px 15px; 
+         }
+        }
+        a{
+            color: $color-terciario;
+            text-decoration:none ;
+            padding: 10px 20px;
+            display: block;
+        }
+        a:hover{
+            color: $color-secundario;
+        }
+        .navbar-toggler{
+            border-color: $color-secundario;
+            border-radius: 10px;
+            background-color:$color-principal;
+        }
+        .navbar-toggler-icon{
+            filter: invert(72%) sepia(74%) saturate(1454%) hue-rotate(359deg) brightness(101%) contrast(105%);
+        }
+        .navbar-nav{
+            color: $color-terciario;
+            :hover{color: $color-secundario
+            }
+        }
+        
+        .nav-link{
+            color:$color-terciario;
+            :hover{color: $color-secundario
+            }
+        }
+    }
+}

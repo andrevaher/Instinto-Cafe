@@ -1,0 +1,57 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as *;
+
+.hero-productos{
+    @include hero(100vh, 0px, 0px, 20px, 20px, url("../media/hero-producto-2s.jpg"));
+
+    h1{
+        @include h1-hero(64px);
+    }
+
+    p{
+        @include textos (24px, $color-terciario);
+    }
+    .boton{
+        button{
+            @include boton (15px 40px 15px 40px);
+        }
+    }
+}
+
+.bloque-productos{
+    @include bloque-productos(180px, 180px, 40px);
+
+    img{
+        @include productos-img(50%);
+    }
+
+    .descripcion{
+        @include descripcion-productos(50px);
+        
+        h2{
+            @include titulos (28px, $color-principal);
+        }
+        li {
+               margin-bottom: 10px;
+        }
+        .boton{
+            button{
+                @include boton (15px 40px 15px 40px)
+            }
+        }
+    }
+}
+
+//bloque 3 cta//
+.banner-cta{
+    @include banner-cta(30px, 30px);
+
+    h2{
+        @include titulos(28px, $color-terciario)
+    }
+    .boton{
+            button{
+                @include boton (15px 40px 15px 40px)
+            }
+        }
+}

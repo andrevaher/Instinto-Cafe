@@ -1,0 +1,98 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as *;
+
+footer{
+    .ft{
+    @include footer(1.2fr 0.8fr 1.2fr 2fr, 1, 60px 40px 0px 40px);
+
+        .col-uno{
+        @include columna-uno(80px);
+
+            img{
+            @include imagen-columna(150px);
+            }
+        }
+
+        .col-dos{
+            h2{
+            @include titulos (24px, $color-terciario);
+            }
+            ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                text-decoration: none;
+                li{
+                    font-family:$fuentes-textos; 
+                
+                    a{
+                        text-decoration: none;
+                        color: $color-terciario; 
+              
+                        &:hover{
+                        color:$color-secundario;
+                        }
+                    }
+                } 
+            }
+        }
+
+        .col-tres{
+            h2{
+            @include titulos (24px, $color-terciario);
+            }
+            ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+
+                li{
+                    font-family: $fuentes-textos; 
+                
+                    a{
+                    text-decoration: none;
+                    color: $color-terciario; 
+              
+                        &:hover{
+                        color: $color-secundario;
+                        }
+                    }
+                }       
+            }
+        }
+        .col-cuatro{
+        @include columna-cuatro(50px);
+
+            .btn-primary{
+                background-color: $color-secundario;
+                border: 0px;
+                border-radius: 0px;
+                font-family: $fuente-titulos;
+                font-weight: 600;
+            }
+            .form-control{
+                border-width: 1px;
+                border-color: $color-principal;
+                border-radius: 10px;
+                font-family: $fuentes-textos;
+                font-weight: 400;
+                font-style: normal;
+                color: $color-principal;
+            }
+            .redes{
+            @include redes (repeat(3, 1fr));
+
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+    .fin {
+        @include datos-desarrollo(16px);
+        margin-bottom: 0px;
+        border-top: 0.5px solid #e0e0e03c;
+    }
+}
+

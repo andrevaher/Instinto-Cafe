@@ -1,0 +1,125 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as* ;
+
+
+/*home - mobile*/
+@media (max-width: 576px){
+    .hero{
+        @include hero(70vh, 230px,40px,30px, 30px,url("../media/fondo-hero.jpg"));
+
+        h1{
+            @include titulos(38px,$color-terciario);
+        }
+    }
+    .formulario {
+    @include seccion-formulario (repeat(1, 1fr), 20px);
+    }
+    .bloque-uno{
+        @include bloque-uno (30px,5px,);
+    }
+    .bloque-dos{
+        @include bloque-dos (20px);
+        .valores{
+            @include valores(repeat(1,1fr), 20px, 10px);
+        }
+    }
+    .bloque-tres{
+        @include bloque-tres (20px, 20px, 20px, 10px,repeat(1,1fr));
+    
+        .seccion-tres {
+            text-align: center;
+        }
+       .galeria{
+            @include galeria (repeat(2, fr), repeat(2, auto), 10px, 260px);
+            width: 260px;
+        }
+    }
+    .bloque-cuatro{
+            @include bloque-cuatro (repeat(1, 1fr), 10px, 40px);
+        div{
+            padding: 10px;
+        }
+    }
+    .bloque-cinco{
+        img{
+            @include imagen-bloque (100px);
+        }
+    }
+
+}
+
+/*Productos - Mobile*/
+@media (max-width: 576px){
+
+    .hero-productos{
+        @include hero(70vh, 150px, 0px, 30px, 30px, url("../media/hero-producto-2s.jpg"));
+        h1{
+            @include h1-hero(38px);
+        }
+    }
+    .bloque-productos{
+        @include bloque-productos(0px, 0px, 0px);
+        flex-direction: column;
+        width: 100%;
+
+        &:nth-of-type(even) {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+/*Contacto - Mobile*/
+@media (max-width: 576px){
+
+    .hero-contacto{
+        @include hero(70vh, 200px, 0px, 20px, 20px, url("../media/hero-contacto.jpg"));
+        h1{
+            @include h1-hero(36px);
+        }
+        p{
+            @include textos (16px, $color-terciario);
+        }
+    }
+    .contacto{
+        @include seccion-contacto(150px, 10px, 10px, center);
+
+        .b1-contacto{
+            @include bloque-uno-contacto(10px, 10px, 20px, 80px, 10px);
+        }
+    }
+}
+
+
+/*Footer mobile*/
+@media (max-width: 576px){
+    footer{
+        .ft{
+            @include footer(1 1fr, 1fr 1fr, 60px 40px 0px 40px);
+            text-align: center;
+            row-gap: 40px;
+
+            .col-uno{
+                @include columna-uno(40px);
+                padding-left: 40px;
+            }
+
+            .col-dos{
+                h2{
+                    @include titulos (24px, $color-terciario);
+                    text-align: center;
+                }
+                ul{
+                    text-align: center;
+                }
+            } 
+            .col-cuatro{
+                @include columna-cuatro(0px);
+                text-align: center;
+                .redes{
+                    @include redes (repeat(3, 1fr));
+                }
+            }
+        }
+    }
+}
+

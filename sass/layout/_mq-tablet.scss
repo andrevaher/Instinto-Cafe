@@ -1,0 +1,208 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as *;
+
+/*resposive -header*/
+@media (max-width: 991.99px) {
+    header { 
+        .container, 
+        .container-fluid {
+            padding: 0;
+        }
+        .navbar-collapse {
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            background-color: $color-principal;
+            border-bottom: 2px solid $color-secundario; 
+        }
+    }
+}
+
+/*home - tablet*/
+
+@media (max-width: 991px){
+    .hero{
+        @include hero(80vh, 180px,20px,10px, 10px,url("../media/fondo-hero.jpg"));
+
+        .boton{
+        display: flex;
+        justify-content: center;
+        button {
+            @include boton(15px 40px 15px 40px);
+            }
+        }   
+
+        h1{
+            @include titulos(48px,$color-terciario);
+        }
+        p{
+        @include textos (18px,  $color-terciario);
+        }
+    }
+    .formulario {
+    @include seccion-formulario (repeat(1, 1fr), 40px);
+        .columna{
+            @include formulario ( 1, 0px, 20px);
+
+            h2{
+                @include titulos (36px, $color-terciario);
+            }
+            p{
+                @include textos (16px, $color-terciario);
+            }
+        
+        }
+    }
+    .bloque-uno{
+        @include bloque-uno (30px 40px 20px,30px,);
+        .carousel-inner{
+            .carousel-item{
+             @include carrusel(300px, 300px);
+            }
+        }   
+        .seccion-uno{
+            h2{
+             @include titulos (28px, $color-terciario);
+            }
+        }
+    }
+    .bloque-dos{
+        @include bloque-dos (40px 40px);
+        .seccion-dos{
+            @include titulos (28px, $color-terciario);
+        }
+        .valores{
+            @include valores(repeat(2,1fr), 20px, 10px);
+        }
+    }
+    .bloque-tres{
+        @include bloque-tres (80px, 20px, 80px, 10px,repeat(2,1fr));
+    
+        .seccion-tres {
+            padding: 20px;
+            
+            h2{
+                @include titulos (28px, $color-terciario);
+            }
+            button{
+                @include boton (15px 15px 15px 15px);
+            }
+        }
+       .galeria{
+            @include galeria (repeat(2, 1fr), repeat(2, 1fr), 10px, 310px);
+            width: 310px;
+
+            img{
+                @include imagen-galeria (150px, 150px, 10px);
+            }
+        }
+    }
+    .bloque-cuatro{
+            @include bloque-cuatro (repeat(3, 1fr), 10px, 40px);
+        div{
+            h2{
+                @include titulos (36px, $color-terciario)
+            }
+        }
+    }
+    .bloque-cinco{
+        img{
+            @include imagen-bloque (100%);
+        }
+    }
+
+}
+
+/*Productos - Tablet*/
+@media (max-width: 991px){
+
+    .hero-productos{
+        @include hero(80vh, 150px, 0px, 50px, 50px, url("../media/hero-producto-2s.jpg"));
+        h1{
+            @include h1-hero(48px);
+        }
+    }
+    .bloque-productos{
+        @include bloque-productos(30px, 30px, 40px);
+
+    
+        .descripcion{
+        @include descripcion-productos(35px);
+        }
+    }
+    .banner-cta{
+        @include banner-cta(60px, 60px);
+    }
+}
+
+/*Contacto - Tablet*/
+@media (max-width: 991px){
+
+    .hero-contacto{
+        @include hero(80vh, 150px, 0px, 50px, 50px, url("../media/hero-contacto.jpg"));
+        h1{
+            @include h1-hero(48px);
+        }
+        p{
+            @include textos (18px, $color-terciario);
+        }
+    }
+    .contacto{
+        @include seccion-contacto(100px, 10px, 10px, center);
+
+        .b1-contacto{
+        @include bloque-uno-contacto(10px, 10px, 40px, 100px, 40px);
+            
+            ul{
+                li{
+                 @include lista-contacto(16px);
+               }
+            }
+        }
+    }
+}
+
+/*Footer tablet*/
+@media (max-width: 991px){
+    footer{
+        .ft{
+            @include footer(1fr 1fr, 1fr 1fr, 60px 40px 0px 40px);
+            text-align: center;
+            row-gap: 35px;
+
+            .col-uno{
+                @include columna-uno(0px);
+
+                img{
+                @include imagen-columna(120px);
+                }
+            }
+
+            .col-dos{
+                h2{
+                    @include titulos (24px, $color-terciario);
+                    text-align: center;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px;
+                    text-decoration: none;
+                }
+            } 
+            .col-cuatro{
+            @include columna-cuatro(0px);
+                .redes{
+                    @include redes (repeat(3, 1fr));
+
+                    img{
+                        width: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
