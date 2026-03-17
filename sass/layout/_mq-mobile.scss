@@ -17,6 +17,10 @@
     .bloque-uno{
         @include bloque-uno (30px,5px,);
         flex-direction: column;
+
+        .seccion-uno{
+            text-align: center;
+        }
     }
     .bloque-dos{
         @include bloque-dos (20px);
@@ -26,13 +30,14 @@
     }
     .bloque-tres{
         @include bloque-tres (20px, 20px, 20px, 10px,repeat(1,1fr));
+        height: auto;
     
         .seccion-tres {
             text-align: center;
         }
        .galeria{
-            @include galeria (repeat(2, fr), repeat(2, auto), 10px, 260px);
-            width: 200px;
+            @include galeria (repeat(2, fr), repeat(2, auto), 10px, 100%);
+            width: 100%;
     
         }
     }

@@ -1046,6 +1046,9 @@ footer .fin {
     gap: 5px;
     flex-direction: column;
   }
+  .bloque-uno .seccion-uno {
+    text-align: center;
+  }
   .bloque-dos {
     padding: 20px;
     background-color: #3f220f;
@@ -1069,6 +1072,7 @@ footer .fin {
     padding-right: 20px;
     padding-bottom: 20px;
     column-gap: 10px;
+    height: auto;
   }
   .bloque-tres .seccion-tres {
     text-align: center;
@@ -1078,8 +1082,8 @@ footer .fin {
     grid-template-columns: repeat(2, fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
-    height: 260px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
   }
   .bloque-cuatro {
     display: grid;
