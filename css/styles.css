@@ -1236,11 +1236,23 @@ footer .fin {
     text-align: center;
   }
   footer .ft .col-cuatro {
-    padding-right: 0px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    padding-right: 50px;
+  }
+  footer .ft .col-cuatro .btn-primary {
+    background-color: #ffb300;
+    border: 0px;
+    border-radius: 0px;
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+  }
+  footer .ft .col-cuatro .form-control {
+    border-width: 1px;
+    border-color: #3f220f;
+    border-radius: 10px;
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3f220f;
   }
   footer .ft .col-cuatro .redes {
     display: flex;

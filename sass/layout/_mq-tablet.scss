@@ -193,7 +193,7 @@
                 }
             } 
             .col-cuatro{
-            @include columna-cuatro(0px);
+                @include columna-cuatro(0px);
                 .redes{
                     @include redes (repeat(3, 1fr));
 

@@ -141,17 +141,29 @@
                 }
             } 
             .col-cuatro{
-                @include columna-cuatro(0px);
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                justify-content: center;
+                @include columna-cuatro(50px);
+
+                .btn-primary{
+                background-color: $color-secundario;
+                border: 0px;
+                border-radius: 0px;
+                font-family: $fuente-titulos;
+                font-weight: 600;
+                }
+                .form-control{
+                border-width: 1px;
+                border-color: $color-principal;
+                border-radius: 10px;
+                font-family: $fuentes-textos;
+                font-weight: 400;
+                font-style: normal;
+                color: $color-principal;
+                }
                 .redes{
-                    @include redes (repeat(3, 1fr));
+                @include redes (repeat(3, 1fr));
 
                     img{
-                        width: 30px;
-                        
+                    width: 30px;
                     }
                 }
             }
