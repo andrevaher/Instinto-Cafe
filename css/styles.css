@@ -178,7 +178,7 @@ header nav .nav-link :hover {
 .bloque-dos {
   padding: 100px 150px;
   background-color: #3f220f;
-  background-image: url(../media/granos-de-cafe.png);
+  background-image: url(../media/granos-de-cafe.webp);
   background-size: cover;
   text-align: center;
 }
@@ -492,7 +492,7 @@ header nav .nav-link :hover {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../media/granos-de-cafe.png);
+  background-image: url(../media/granos-de-cafe.webp);
   background-size: cover;
   background-color: #3f220f;
   padding-bottom: 150px;
@@ -778,7 +778,7 @@ footer .fin {
   .bloque-dos {
     padding: 40px 40px;
     background-color: #3f220f;
-    background-image: url(../media/granos-de-cafe.png);
+    background-image: url(../media/granos-de-cafe.webp);
     background-size: cover;
     text-align: center;
   }
@@ -959,7 +959,7 @@ footer .fin {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../media/granos-de-cafe.png);
+    background-image: url(../media/granos-de-cafe.webp);
     background-size: cover;
     background-color: #3f220f;
     padding-bottom: 100px;
@@ -1089,7 +1089,7 @@ footer .fin {
   .bloque-dos {
     padding: 20px;
     background-color: #3f220f;
-    background-image: url(../media/granos-de-cafe.png);
+    background-image: url(../media/granos-de-cafe.webp);
     background-size: cover;
     text-align: center;
   }
@@ -1245,7 +1245,7 @@ footer .fin {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../media/granos-de-cafe.png);
+    background-image: url(../media/granos-de-cafe.webp);
     background-size: cover;
     background-color: #3f220f;
     padding-bottom: 150px;

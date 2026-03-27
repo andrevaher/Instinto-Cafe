@@ -83,7 +83,7 @@
 @mixin bloque-dos ($padding){
     padding: $padding;
     background-color: $color-principal;
-    background-image: url(../media/granos-de-cafe.png);
+    background-image: url(../media/granos-de-cafe.webp);
     background-size: cover;
     text-align: center;
 }
@@ -180,7 +180,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: $justify-content;
-    background-image: url(../media/granos-de-cafe.png);
+    background-image: url(../media/granos-de-cafe.webp);
     background-size: cover;
     background-color: $color-principal;
     padding-bottom: $padding-bottom;
