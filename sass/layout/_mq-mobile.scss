@@ -110,7 +110,7 @@
 @media (max-width: 576px){
 
     .hero-contacto{
-        @include hero(70vh, 150px, 0px, 20px, 20px, url("../media/hero-contacto.jpg"));
+        @include hero(70vh, 150px, 0px, 20px, 20px, url("../media/hero-contacto-1.jpg"));
         h1{
             @include h1-hero(36px);
         }
