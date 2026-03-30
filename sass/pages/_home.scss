@@ -4,6 +4,10 @@
 //Hero//
 .hero{
     @include hero(100vh, 0px, 0px, 0px,0px, url("../media/fondo-hero.jpg"));
+    .kenburns-bottom {
+	-webkit-animation: kenburns-bottom 5s ease-out both;
+	        animation: kenburns-bottom 5s ease-out both;
+    }
     .boton{
         display: flex;
         justify-content: center;
