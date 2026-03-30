@@ -2,8 +2,7 @@
 @use "../utilities/mixin" as *;
 
 .hero-contacto{
-    @include hero(100vh, 0px, 0px, 220px, 220px, url("../media/hero-contacto.jpg"));
-
+    @include hero(100vh, 0px, 0px, 220px, 220px, url("../media/hero-contacto-1git.jpg"));
 
     h1{
         @include h1-hero(64px);
