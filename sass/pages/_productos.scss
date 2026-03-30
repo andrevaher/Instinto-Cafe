@@ -48,6 +48,7 @@
 //bloque 3 cta//
 .banner-cta{
     @include banner-cta(30px, 30px);
+    animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;
 
     h2{
         @include titulos(28px, $color-terciario)
