@@ -928,7 +928,7 @@ footer .fin {
 /*Contacto - Tablet*/
 @media (max-width: 991px) {
   .hero-contacto {
-    background-image: url("../media/hero-contacto.jpg");
+    background-image: url("../media/hero-contacto-1.jpg");
     background-size: cover;
     background-position: top;
     height: 70vh;
