@@ -104,6 +104,7 @@ header nav .nav-link :hover {
 }
 
 /*home*/
+/*Animaciones*/
 .hero {
   background-image: url("../media/fondo-hero.jpg");
   background-size: cover;
