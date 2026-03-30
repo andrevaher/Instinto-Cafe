@@ -1,11 +1,13 @@
 @use "../utilities/variables" as*;
 @use "../utilities/mixin" as *;
+@use "../base/animations" as*;
 
 .hero-contacto{
     @include hero(100vh, 0px, 0px, 220px, 220px, url("../media/hero-contacto-1.jpg"));
 
     h1{
         @include h1-hero(64px);
+        animation:scale-in-top .9s cubic-bezier(.25,.46,.45,.94) both;
     }
 
     p{

@@ -1,11 +1,13 @@
 @use "../utilities/variables" as*;
 @use "../utilities/mixin" as *;
+@use "../base/animations" as*;
 
 .hero-productos{
     @include hero(100vh, 0px, 0px, 20px, 20px, url("../media/hero-producto-2s.jpg"));
 
     h1{
         @include h1-hero(64px);
+        animation:scale-in-top .9s cubic-bezier(.25,.46,.45,.94) both;
     }
 
     p{
@@ -23,6 +25,7 @@
 
     img{
         @include productos-img(50%);
+        animation:slit-in-vertical .65s ease-out both;
     }
 
     .descripcion{

@@ -5,7 +5,7 @@
 //Hero//
 .hero{
     @include hero(100vh, 0px, 0px, 0px,0px, url("../media/fondo-hero.jpg"));
-    animation:kenburns-bottom 5s ease-out both;
+    
     .boton{
         display: flex;
         justify-content: center;
@@ -15,6 +15,7 @@
     }
     h1{
         @include h1-hero (64px);
+        animation:scale-in-top .9s cubic-bezier(.25,.46,.45,.94) both;
     }
     p{
         @include textos (24px,  $color-terciario);
