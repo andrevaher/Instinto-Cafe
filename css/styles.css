@@ -92,8 +92,6 @@ header nav .nav-link :hover {
   padding-right: 0px;
   margin-top: -220px;
   text-align: center;
-}
-.hero .kenburns-bottom {
   animation: kenburns-bottom 5s ease-out both;
 }
 .hero .boton {
